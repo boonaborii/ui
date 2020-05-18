@@ -25,9 +25,7 @@ class InventoryItem extends \atk4\data\Model
 
 \atk4\ui\Header::addTo($app, ['MultiLine form field', 'icon' => 'database', 'subHeader' => 'Collect/Edit multiple rows of table record.']);
 
-$data = [];
-
-$inventory = new InventoryItem(new \atk4\data\Persistence\Array_($data));
+$inventory = new InventoryItem(new \atk4\data\Persistence\Array_());
 
 // Populate some data.
 $total = 0;

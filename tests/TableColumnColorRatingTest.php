@@ -26,7 +26,6 @@ class TableColumnColorRatingTest extends AtkPhpunit\TestCase
                 ],
             ],
         ];
-
         $db = new \atk4\data\Persistence\Array_($arr);
         $m = new \atk4\data\Model($db, 'table');
         $m->addField('name');
